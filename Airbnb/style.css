@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+/*font-family: 'Fredoka', sans-serif;*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Fredoka', sans-serif;
+  background-color: #000000;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80%;
+  background: red;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.airbnbHost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.web {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.btnChangeWebsiteLanguage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  width: 70px;
+}
+
+.btnConnexion {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
+  border-radius: 25px;
+}
+
+.btnBecomingHost {
+  border-radius: 25px;
+  font-size: 20px;
+  padding: 0px 20px 0px 20px;
+}
+
+.btn {
+  height: 50px;
+}
+
+.airbnbBurger {
+  width: 20px;
+}
+
+.airbnbProfil {
+  width: 30px;
+}
