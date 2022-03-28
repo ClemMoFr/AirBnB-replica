@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 /*font-family: 'Fredoka', sans-serif;*/
 
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -11,73 +17,88 @@ body {
   color: white;
 }
 
-.logo {
+header{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  position: relative;
+  background-color: red;
+}
+
+/*Bouton header*/
+
+/*Mise en forme*/
+
+.btn{
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  margin: 0px 2px 0px 2px;
+}
+
+.airbnbBurger{
+  height: 12px;
+  margin: 0px 15px 0px 10px;
+}
+
+.airbnbProfil{
+  height: 30px;
+  margin: 0px 5px 0px 5px;
+}
+
+.btnConnexion{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.btnChangeWebsiteLanguage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.web{
+  font-size: 20px;
+  margin: 0px 15px 0px 15px;
+}
+
+.btnBecomingHost{
+  font-size: 15px;
+  font-family: 'Fredoka', sans-serif;
+  padding: 0px 10px 0px 10px;
+}
+
+.airbnbicon{
+  font-size: 35px;
+}
+
+.airbnbname{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/*placement*/
+
+.host{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  margin-right: 10%;
 }
 
-header {
+.logo{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 10%;
+}
+
+.ensemblelogoethost{
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  width: 80%;
-  background: red;
-}
-
-header ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.airbnbHost {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-.web {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-}
-
-.btnChangeWebsiteLanguage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 25px;
-  width: 70px;
-}
-
-.btnConnexion {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100px;
-  border-radius: 25px;
-}
-
-.btnBecomingHost {
-  border-radius: 25px;
-  font-size: 20px;
-  padding: 0px 20px 0px 20px;
-}
-
-.btn {
-  height: 50px;
-}
-
-.airbnbBurger {
-  width: 20px;
-}
-
-.airbnbProfil {
-  width: 30px;
+  width: 100%;
 }
