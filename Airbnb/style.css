@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 /*font-family: 'Fredoka', sans-serif;*/
 
-
-*{
+* {
   padding: 0;
   margin: 0;
 }
@@ -17,88 +16,235 @@ body {
   color: white;
 }
 
-header{
+header {
   width: 100%;
-  height: 80px;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   position: relative;
-  background-color: red;
 }
 
 /*Bouton header*/
 
 /*Mise en forme*/
 
-.btn{
+.btn {
   height: 40px;
   border-radius: 30px;
   border: none;
   margin: 0px 2px 0px 2px;
+
+  color: #fff;
 }
 
-.airbnbBurger{
+.btnBecomingHost,
+.btnChangeWebsiteLanguage {
+  background-color: #000000;
+}
+
+.btn:hover {
+  background-color: #282625;
+}
+
+.airbnbBurger {
   height: 12px;
   margin: 0px 15px 0px 10px;
 }
 
-.airbnbProfil{
+.airbnbProfil {
   height: 30px;
   margin: 0px 5px 0px 5px;
 }
 
-.btnConnexion{
+.btnConnexion {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 
-.btnChangeWebsiteLanguage{
+.btnChangeWebsiteLanguage {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-.web{
+.web {
   font-size: 20px;
   margin: 0px 15px 0px 15px;
 }
 
-.btnBecomingHost{
+.btnBecomingHost {
   font-size: 15px;
   font-family: 'Fredoka', sans-serif;
   padding: 0px 10px 0px 10px;
 }
 
-.airbnbicon{
+.airbnbicon {
   font-size: 35px;
 }
 
-.airbnbname{
+.airbnbname {
   font-size: 25px;
   font-weight: 500;
 }
 
+.searchBlock {
+  margin-bottom: 30px;
+}
+.searchBlock span {
+  margin: 0px 15px 0px 15px;
+}
+
+.searchBarMain {
+  position: absolute; /* postulat de départ */
+  top: 120%;
+  left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.searchBarBg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 35px;
+  height: 70px;
+}
+
+.oneNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 35px;
+  height: 100%;
+}
+
+.oneNav:hover {
+  background-color: #ebeaea;
+}
+
+.destination,
+.arrive,
+.depart,
+.voyageurs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 60%;
+  margin-left: 40px;
+}
+
+.searchBarTitle {
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.searchBarSubTitle {
+  color: rgb(143, 143, 143);
+  font-weight: 300;
+}
+
+.destination {
+  width: 110px;
+  margin-right: 100px;
+}
+
+.arrive,
+.depart,
+.voyageurs {
+  margin-right: 70px;
+  width: 70px;
+}
+
+.searchBarButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  margin: 0px 10px 0px 10px;
+  background-color: #ef465e;
+  transition: 1s;
+}
+
+.searchBarButton:hover {
+  background-color: #e12461;
+}
+
+.searchIcon {
+  width: 50%;
+  height: 50%;
+  color: white;
+}
+
 /*placement*/
 
-.host{
+.host {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
-.ensemblelogoethost{
+.ensemblelogoethost {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  margin-top: 20px;
   width: 100%;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 120px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: red;
+  padding-bottom: 30px;
+  background-image: url(img/Background1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.section1 p {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.section1 button {
+  width: 200px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  color: #b22085;
+}
+
+/* Section 2*/
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgb(0, 0, 0) 20%, #eee 10%);
 }
